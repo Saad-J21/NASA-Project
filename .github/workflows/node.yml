@@ -21,5 +21,6 @@ jobs:
         with:
           mongodb-version: "4.4"
       - run: npm install
-      - run: npm run build --prefix client
+      - run: npm run build
+        working-directory: ../../client
       - run: npm test
